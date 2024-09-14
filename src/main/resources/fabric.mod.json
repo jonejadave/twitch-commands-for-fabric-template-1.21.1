@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "twitchcmds",
+	"version": "${version}",
+	"name": "Twitch Commands for Fabric",
+	"description": "This is my personal mod used for interactive minecraft twitch streams! ",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/twitchcmds/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dave.twitchcmds.TwitchCommandsForFabric"
+		],
+		"fabric-datagen": [
+			"net.dave.twitchcmds.TwitchCommandsForFabricDataGenerator"
+		],
+		"client": [
+			"net.dave.twitchcmds.TwitchCommandsClient"
+		]
+	},
+	"mixins": [
+		"twitchcmds.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
